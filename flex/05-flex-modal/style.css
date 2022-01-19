@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;     /* added */
+  padding: 15px;     /* added */
+  gap: 15px;         /* added */
 }
 
 .icon {
@@ -64,3 +67,16 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.header {                    /* added */
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.header, .text {             /* added */
+  margin-bottom: 10px;
+}
+
+/* Note: my solution is different in that I created 3 items to flex. I separated
+         the close button from the header which is different from the solution
+         provided  */
