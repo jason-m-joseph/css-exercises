@@ -10,6 +10,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center; /* added */
+  margin: 0 0 32px 0; /* added */
 }
 
 /* do not edit this footer */
@@ -24,3 +26,19 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.container {            /* added selector and properties */
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item {                 /* added selector and properties */
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Note, my answer is a little different but I'm keeping it that way. 
+   Also, my third item seems to be better aligned than the one in the solution
+   because I didn't add 'align-items: center'; to '.container.'
+   Solution uses max-width instead of width so I changed mine to max-width */
