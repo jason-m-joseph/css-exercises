@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;                       /* added */
+  flex-direction: column;              /* added */
+  justify-content: space-between;      /* added */
+  padding: 0px;                       /* added */
 }
 
 img {
@@ -16,7 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-}
+  padding: 12px;                      /* added */
+} 
 
 input {
   border: 1px solid #ddd;
@@ -25,3 +30,40 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* added everything below this line */
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #eeeeee;
+  padding: 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Note: My answer is slightly different from the solution provided.
+   But it seems to function just fine. */
